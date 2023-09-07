@@ -1,0 +1,40 @@
+
+
+
+.navbar {
+  padding: 1rem;
+  .nav-link {
+    padding: 8px 0;
+    margin: 0 20px;
+    color: #797878;
+    text-decoration: none;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      padding: 8px 0;
+      max-width: 0;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+      color: #fff;
+      content: attr(data-hover);
+      -webkit-transition: max-width 0.5s;
+      -moz-transition: max-width 0.5s;
+      transition: max-width 0.5s;
+    }
+    &:hover {
+      &::before {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .active {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+}
