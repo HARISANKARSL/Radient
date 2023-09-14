@@ -1,16 +1,43 @@
-<div class="bg-transparent">
+<div class="lg:bg-transparent bg-gray-800">
     
-    <div class="container ">
-        <div class="z-10 flex lg:justify-around justify-between items-center navbar  p-3 {{isNavbarScroll?'fixed top-0 shadow-2xl  transition-all duration-150 z-10 bg-gray-800 w-full z-10 left-0 animate__animated animate__fadeInDown animate-faster p-0 text-white':' text-white py-1  w-full'}}">
+    <div class="py-3">
+        <div class="z-50 flex lg:justify-around justify-between items-center navbar  p-3 {{isNavbarScroll?'fixed top-0 shadow-2xl  transition-all duration-150  bg-gray-800 w-full left-0 animate__animated animate__fadeInDown animate-faster p-0 text-white':' text-white py-1  w-full '}}">
             <ul>
-                <li class="text-2xl font-extrabold  cursor-pointer" data-hover="Logo">Logo</li>
+                <li class="text-2xl font-extrabold  cursor-pointer lg:px-0 px-5" data-hover="Logo">Logo</li>
             </ul>
-           <app-menu></app-menu>
-            <ul class="lg:hidden">
-                <li><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+           <app-menu class="hidden lg:flex"></app-menu>
+            <ul class="lg:hidden lg:px-0 px-5">
+                <li (click)="openSidebar()" ><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                   </svg></li>
             </ul>
+            <nav class="lg:hidden  animate__animated animate__fadeInDown animate-faster
+            {{isSidebarOpen?'flex w-full h-screen  absolute  left-0 top-0 text-white':'hidden'}} " >
+             <div class="bg-gray-800 w-full md:max-w-md ">
+             <div class="flex justify-end  ">
+               <span class="cursor-pointer px-3">
+                 <svg (click)="closeSidebar()" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                   <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                 </svg>
+               </span>
+             </div>
+             <div class="mt-3 md:p-5 p-2 ">
+              <div class="flex flex-col items-center justify-center">
+                <app-phone class="p-3" ></app-phone>
+                <app-email class="p-3"></app-email>
+              </div>
+            
+             <app-menu class=" items-center  w-full " (click)="closeSidebar()" ></app-menu>
+             <app-social class=" p-3 flex items-center justify-center gap-5"></app-social>
+             </div>
+             </div>
+             <div (click)="closeSidebar()" class="bg-slate-900 hidden md:block md:w-full opacity-70 blur-5xl">
+             
+             
+             
+               </div>
+             </nav>
         </div>
     </div>
+  
 </div>

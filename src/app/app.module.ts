@@ -17,6 +17,9 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { PhoneComponent } from './shared/phone/phone.component';
 import { SocialComponent } from './shared/social/social.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { VideoPopupComponent } from './shared/video-popup/video-popup.component';
+import {HttpClientModule} from '@angular/common/http';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
@@ -34,11 +37,15 @@ import { CoursesComponent } from './components/courses/courses.component';
     MenuComponent,
     PhoneComponent,
     SocialComponent,
-    CoursesComponent
+    CoursesComponent,
+    VideoPopupComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
