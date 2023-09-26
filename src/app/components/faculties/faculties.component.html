@@ -25,91 +25,19 @@
         <div >
             <h1 class="text-center py-5 ">Our Experienced Faculties</h1>
             <div class="row py-5">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
+                <div class="col-sm-12 col-md-6 col-lg-3 py-5" *ngFor="let items of faculties ">
+                    <div class="card lg:h-[24rem]">
+                        <img class="card-img-top " src="./assets/images/tchr.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title font-bold">Dr.Manjusha S</h5>
-                          <p class="card-text text-sm text-gray-800">MSc,PhD, Biotechnology( 20Yrs of experience)</p>
+                          <h5 class="card-title font-bold">{{items.name}}</h5>
+                          <p class="card-text text-sm text-gray-600">{{items.about}}</p>
                
                         </div>
                       </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Anooja</h5>
-                          <p class="card-text text-sm text-gray-800">MSc zoology (15 yrs of Experience)</p>
                
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Lakshmi Kartha</h5>
-                          <p class="card-text text-sm text-gray-800">(15 yrs of experience)</p>
-               
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Dr. Anu</h5>
-                          <p class="card-text text-sm text-gray-800">BDS (25 yrs of experience)</p>
-               
-                        </div>
-                      </div>
-                </div>
             </div>
-            <div class="row py-5">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Rini</h5>
-                          <p class="card-text text-sm text-gray-800">MSc Zoology ( 5yrs of experience)</p>
-               
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">MeghaMurali</h5>
-                          <p class="card-text text-sm text-gray-800">MSc Botany &Microbiology ( 5yrs of experience)</p>
-               
-                        </div>
-                      </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]">
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Dr. Dhanya</h5>
-                          <p class="card-text text-sm text-gray-800">Ph.D</p>
-               
-                        </div>
-                      </div>
-                </div>
-                
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card h-[21rem]" >
-                        <img class="card-img-top" src="./assets/images/tchr.jpg" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title font-bold">Dr.Akshay</h5>
-                          <p class="card-text text-sm text-gray-800">MBBS</p>
-               
-                        </div>
-                      </div>
-                </div>
-            </div>
+           
         </div>
     </div>
 </div>

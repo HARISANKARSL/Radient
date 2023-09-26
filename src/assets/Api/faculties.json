@@ -1,0 +1,73 @@
+{
+  "faculties": [
+    {
+      "name": "Dr Ansar MA",
+      "about": "PhD, SET, (Cracked Civil service Prelims two, Main one ) Former Joint Registrar and Planning Development Officer Presently Director of Civil service exams "
+    },
+    {
+      "name": "Dr Manjusha",
+      "about": "MSc, PhD, NET, MBA (with 22 yrs Teaching and Research in University (CUSAT) and College level)"
+    },
+    {
+      "name": "Rosario John",
+      "about": "MSc Physics "
+    },
+    {
+      "name": "Haritha ",
+      "about": "MSc Physics"
+    },
+    {
+      "name": "Sayooj Lal ",
+      "about": " BTech"
+    },
+    {
+      "name": "Revathy ",
+      "about": "  MTech Biology"
+    },
+    {
+      "name": "Aparna ",
+      "about": " MSc Chemistry (with 8 yrs in teaching and Research) "
+    },
+    {
+      "name": "Linu  ",
+      "about": " MSc BEd, Chemistry (4 yrs in Entrance Teaching)"
+    },
+    {
+      "name": "Babu  ",
+      "about": "  MSc  (Former Akash faculty With 20 yrs in Teaching)"
+    },
+    {
+      "name": "Dr Gokul   ",
+      "about": "  MBBS "
+    },
+    {
+      "name": "Dr .Akshay   ",
+      "about": "  MBBS (Five yrs in Entrance classes teaching )"
+    },
+    {
+      "name": "Dr Haritha   ",
+      "about": "  BDS Five yrs in Entrance Teaching"
+    },
+    
+    {
+        "name": "Dr Akhila ",
+        "about": "Biology PhD"
+      },
+      {
+        "name": "Dr Sidharth",
+        "about": "Maths, MSc, PhD Maths,NET, MA History NET, MA Philosophy NET, (Maths and History for Civil Service)"
+      },
+      {
+        "name": "Prashanth",
+        "about": "MSc Maths"
+      },
+      {
+        "name": "Varun Binoy",
+        "about": "Btech Mathematical aptitude and Quantitative aptitude"
+      },
+      {
+        "name": "Arya ",
+        "about": "MSc Zoology ,(General Knowledge,) UPSC exam two times written"
+      }
+  ]
+}
