@@ -42,7 +42,10 @@ this.showval="Facilities";
           else if(this.route.url==='/courses'){
             this.showval='Courses'
           }
-                                         
+          else if(this.route.url==='/gallery'){
+            this.showval='Gallery'
+          }
+                                       
                   
 }
 }

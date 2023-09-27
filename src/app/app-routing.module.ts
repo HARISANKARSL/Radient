@@ -6,6 +6,7 @@ import { FacilitiesComponent } from './components/facilities/facilities.componen
 import { FacultiesComponent } from './components/faculties/faculties.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CoursesComponent } from './components/courses/courses.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,9 @@ const routes: Routes = [
   },
   {
     path:'about',component:AboutComponent
+  },
+  {
+    path:'gallery',component:GalleryComponent
   },
   {
     path:"facilities",component:FacilitiesComponent

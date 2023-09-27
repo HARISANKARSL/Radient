@@ -20,6 +20,10 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { VideoPopupComponent } from './shared/video-popup/video-popup.component';
 import {HttpClientModule} from '@angular/common/http';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,13 +43,19 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     SocialComponent,
     CoursesComponent,
     VideoPopupComponent,
+    GalleryComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
