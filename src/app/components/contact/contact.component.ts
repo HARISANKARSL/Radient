@@ -30,7 +30,7 @@ export class ContactComponent {
       phone: this.form.value.phone,
       message: this.form.value.message,
       });
-     this.toast.success("asdsd")
+     this.toast.success(" We will be in touch with you shortly.","Thanks for contacting us!")
       this.form.reset()
     }
 }

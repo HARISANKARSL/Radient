@@ -24,7 +24,40 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxUiLoaderConfig, NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from 'ngx-ui-loader';
 
+
+const ngxUiLoaderConfig: NgxUiLoaderConfig = {
+  "bgsColor": "#080808",
+  "bgsOpacity": 0.2,
+  "bgsPosition": "bottom-right",
+  "bgsSize": 30,
+  "bgsType": "ball-spin-clockwise",
+  "blur": 200,
+  "delay": 0,
+  "fastFadeOut": true,
+  "fgsColor": "#ff3030",
+  "fgsPosition": "center-center",
+  "fgsSize": 80,
+  "fgsType": "three-bounce",
+  "gap": 20,
+  "logoPosition": "center-center",
+  "logoSize": 200,
+  "logoUrl": "",
+  "masterLoaderId": "master",
+  "overlayBorderRadius": "0",
+  "overlayColor": "rgba(24,24,24,0.99)",
+  "pbColor":  "#ff3030",
+  "pbDirection": "ltr",
+  "pbThickness": 2,
+  "hasProgressBar": true,
+  "text": "loading.....",
+  "textColor": "#999e99",
+  "textPosition": "center-center",
+  "maxTime": -100,
+  "minTime": 1000,
+
+};
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +88,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    
+     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    NgxUiLoaderRouterModule, // import this module for showing loader automatically when navigating between app routes
+    NgxUiLoaderHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
